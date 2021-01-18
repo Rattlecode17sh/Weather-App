@@ -1,0 +1,101 @@
+body {
+    overflow: auto;
+    height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    color: #E0D7D7;
+    border: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+form {
+    width: 70%;
+    margin-left: 10%;
+}
+
+input, .row, .col, h3, button {
+    margin: 0;
+    border: 0;
+}
+
+.card {
+    margin: 8px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+  transform: translateY(-10px);
+}
+
+#topcorner{
+    position: absolute;
+    top: 1vw;
+    right: 0;
+}
+
+#topcorner p {
+    margin: 1px;
+    margin-left: 0;
+}
+
+#content, #innerContent {
+    margin-left: 2vw;
+}
+
+#mainWeather {
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+}
+
+#desc {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+#innerContent {
+    margin-bottom: 0;
+    padding: 10px;
+    border: 0;
+}
+
+#extraDetails, #extraDetails p{
+    margin-top: 0;
+    border: 0;
+}
+
+#extraDetails p{
+    line-height: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+    #mainWeather {
+        font-size: 1rem;
+    }
+    #desc {
+        font-size: 0.6rem;
+    }
+    #topcorner {
+        font-size: 0.7rem;
+    }
+    #additionalContent h5 {
+        font-size: 1rem;
+    }
+    #additionalContent p {
+        font-size: 0.6rem;
+    }
+}
